@@ -1,0 +1,276 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Variable  */
+:root {
+    --navbar-height: 60px
+}
+
+
+/* Navigation Bar  */
+#navbar {
+    position: relative;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    margin: 0px;
+    top: 0px;
+
+}
+
+/* Navigation Bar: logo and img */
+#logo {
+    margin: 7px 12px;
+}
+
+#logo img {
+    width: 50px;
+    height: 50px;
+    margin: 6px 9px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    /* width: 500px ;
+    border: 2px solid black; */
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    /* Z-index ka matleb text uper a jay ga */
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    /* by default is ki value display inline hoti ha jab display block kry ga to page ky between space dy sakty han mean padding */
+    display: block;
+    padding: 4px 25px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar li a:hover {
+    color: blue;
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+    position: relative;
+
+}
+
+#home::before {
+    content: "";
+    background: url(../img/bgg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /* Z-index ka matleb text uper a jay ga */
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* Utility classes */
+
+#home h1 {
+    text-align: center;
+    color: white;
+    font-family: cursive;
+}
+
+#home p {
+    /* border: 3px solid wheat; */
+}
+
+.btn {
+    padding: 6px 12px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 14px 4px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Services Section */
+
+/* Utility classes */
+
+
+.h-primary {
+    font-size: 30px;
+    padding: 12px;
+    text-align: center;
+}
+
+.h-secendery {
+    font-size: 24px;
+    padding: 12px;
+    text-align: center;
+
+}
+
+.box p {
+
+    text-align: center;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: ;
+    justify-content: center;
+    margin: 12px 12px;
+}
+
+#services .box {
+    width: 330px;
+    border: 4px solid brown;
+    margin: 4px 7px;
+    padding: 10px 30px;
+    border-radius: 23px;
+    text-align: left;
+    background-color: #e6e0d9;
+}
+
+#services .box img {
+    height: 200px;
+    margin: 6px auto;
+    /* margin auto tab kam kry ga jab display block ho gi or widht ya height ma sy ak cheez set ho gi */
+    display: block;
+
+}
+
+.d-primery{
+  
+    font-size: 45px;
+    color: white;
+}
+#clint-section{
+    /* display: flex; */
+    text-align: center;
+    margin: 22px 0px;
+
+    /* align-items: center; */
+    background-image: url(img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    height: 500px;
+}
+#clints {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* images ke darmiyan space */
+    margin-top: 30px;
+}
+
+
+#clint-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/7.jpg);
+}
+
+
+
+.class-item img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+/* contect section  */
+#contect{
+ position: relative;  
+ 
+}
+#contect-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+
+}
+#contect-box,
+#contect-box textarea{
+    padding: 13px ;
+    width: 100%;
+}
+#contect-box form{
+    width: 40%;
+}
+input{
+    width: 300px ;
+    padding: 5px 13px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+textarea{
+     width: 300px ;
+    padding: 5px 13px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#contect::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.76;
+    background-image: url(img/33.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    color: blue;
+}
+textarea:hover{
+    background-color: bisque;
+    color: black;
+    cursor: pointer;
+    border: 3px solid blue;
+}
+
+
+footer{
+    background: black;
+    color: wheat;
+    text-align: center;
+    padding: 15px 3px;
+    margin-bottom: 15px;
+}
